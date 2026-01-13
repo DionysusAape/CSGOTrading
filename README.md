@@ -9,7 +9,7 @@
 
 *An intelligent multi-agent system leveraging Large Language Models for automated Counter-Strike 2 market analysis and trading decisions*
 
-[Paper](#citation) | [Documentation](#documentation) | [Installation](#installation) | [Quick Start](#quick-start)
+<!-- [Paper](#citation) | [Documentation](#documentation) | [Installation](#installation) | [Quick Start](#quick-start) -->
 
 </div>
 
@@ -402,21 +402,6 @@ black src/
 
 ---
 
-## 📝 Citation
-
-If you use CSGOTrading in your research, please cite:
-
-```bibtex
-@article{csgotrading2026,
-  title={CSGOTrading: Multi-Agent LLM Framework for CS2 Market Trading},
-  author={Your Name},
-  journal={arXiv preprint arXiv:2501.xxxxx},
-  year={2026}
-}
-```
-
----
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -429,15 +414,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **OpenAI, Anthropic, DeepSeek**: LLM providers
 - **CS2 Community**: Market data and insights
 - **Contributors**: All community contributors
-
----
-
-## 📞 Contact
-
-- **Author**: [Your Name]
-- **Email**: your.email@example.com
-- **GitHub**: [@IatomicreactorI](https://github.com/IatomicreactorI)
-- **Issues**: [GitHub Issues](https://github.com/IatomicreactorI/CSGOTrading/issues)
 
 ---
 
