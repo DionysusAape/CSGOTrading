@@ -65,7 +65,7 @@ Key contributions:
                     │ • CS2 Market API      │
                     │ • Steam News API      │
                     │ • Reddit API          │
-                    │ • SQLite/Supabase DB  │
+                    │ • Database            │
                     └───────────────────────┘
 ```
 
@@ -102,7 +102,7 @@ Key contributions:
 - **State Persistence**: Complete portfolio history tracking in database
 
 ### 🔧 Production-Ready Infrastructure
-- **Database Support**: SQLite for local development, Supabase for production
+- **Database Support**: SQLite for local development
 - **Multi-Provider LLM**: OpenAI, Anthropic, DeepSeek, Ollama, etc.
 - **Extensive Configuration**: 50+ pre-configured experiment setups
 - **Comprehensive Logging**: Detailed agent execution and decision tracking
@@ -115,7 +115,6 @@ Key contributions:
 - Python 3.8 or higher
 - pip package manager
 - (Optional) SQLite for local database
-- (Optional) Supabase account for cloud database
 
 ### Setup
 
@@ -143,10 +142,9 @@ cp .env.example .env
 # - OPENAI_API_KEY (for OpenAI models)
 # - ANTHROPIC_API_KEY (for Claude models)
 # - DEEPSEEK_API_KEY (for DeepSeek models)
-# - SUPABASE_URL and SUPABASE_KEY (for cloud database)
 ```
 
-5. **Initialize database** (if using local SQLite)
+5. **Initialize database**
 ```bash
 python src/database/cs2_sqlite_setup.py
 ```
@@ -235,11 +233,6 @@ enable_transaction_fee: true  # Include trading costs
 **Local SQLite** (default):
 ```bash
 python src/run.py --config TS-ds.yaml
-```
-
-**Supabase Cloud**:
-```bash
-python src/run.py --config TS-ds.yaml --no-local-db
 ```
 
 ---
