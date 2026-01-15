@@ -187,11 +187,11 @@ The system supports multiple workflow configurations:
 
 Each configuration can be combined with different LLM providers:
 - `-ds`: DeepSeek
-- `-gm`: GPT-4o-mini
-- `-gt`: GPT-4-turbo
-- `-cd`: Claude 3.5 Sonnet
-- `-km`: Qwen (local)
-- `-qw`: Qwen (API)
+- `-gm`: Gemini
+- `-gt`: GPT
+- `-cd`: Claude
+- `-km`: Kimi
+- `-qw`: Qwen
 
 Example: `TSLE-cd.yaml` uses all analysts with Claude 3.5 Sonnet.
 
@@ -245,22 +245,6 @@ python src/run.py --config TS-ds.yaml --no-local-db
 
 ---
 
-## 📈 Experimental Results
-
-### Performance Metrics
-
-Our experiments demonstrate the effectiveness of multi-agent coordination:
-
-| Configuration | Sharpe Ratio | Max Drawdown | Win Rate | Avg Return |
-|--------------|--------------|--------------|----------|------------|
-| Direct-LLM   | 0.45        | -12.3%       | 48.2%    | 2.3%       |
-| T (Technical)| 0.62        | -9.8%        | 52.1%    | 4.7%       |
-| TS (Tech+Sent)| 0.78       | -8.2%        | 55.4%    | 6.2%       |
-| TSL (Full)   | **0.91**    | **-6.5%**    | **58.7%**| **7.8%**   |
-
-*Note: Results based on backtesting from 2025-09-25 to 2025-10-27 with 2% transaction fees*
-
----
 
 ## 🗂️ Project Structure
 
@@ -431,7 +415,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### Version History
 
-- **v0.1.0** (2026-01-13): Initial release with core multi-agent framework
+- **v0.1.0** (2026-01-05): Initial release with core multi-agent framework
 - **v0.0.1** (2025-12): Private beta testing
 
 ---
