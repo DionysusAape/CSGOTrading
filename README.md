@@ -337,7 +337,7 @@ Provider.add_provider("custom", ProviderConfig(...))
 
 ---
 
-## 📚 Documentation
+<!-- ## 📚 Documentation
 
 ### API Reference
 
@@ -351,7 +351,7 @@ Detailed API documentation is available in the `docs/` directory:
 
 For a comprehensive understanding of the system workflow, see [WORKFLOW_EXPLANATION.md](src/WORKFLOW_EXPLANATION.md).
 
----
+--- -->
 
 ## 🤝 Contributing
 
