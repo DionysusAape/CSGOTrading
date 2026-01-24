@@ -3,8 +3,8 @@
 Fetch Steam news (GetNewsForApp) for a list of tickers and store into a single steam_data.csv file.
 
 Usage example:
-  python src/apis/steam/fetch_steam_data.py \
-    --config src/config/Direct-cd.yaml \
+  python apis/steam/fetch_steam_data.py \
+    --config config/Direct-cd.yaml \
     --start-date 2025-09-25 \
     --end-date 2025-11-15 \
     --limit 15
