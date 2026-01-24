@@ -14,9 +14,12 @@ Usage example:
 import argparse
 import csv
 import os
+import sys
 from datetime import datetime, timedelta
 from typing import List
 import yaml
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 
 from apis.steam.api import SteamAPI
 from apis.common_model import MediaNews
